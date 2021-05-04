@@ -33,4 +33,6 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run test
-        run: python manage.py test
+        run: |
+          cd shop
+          python manage.py test
